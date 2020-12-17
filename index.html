@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gerador de codigos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<header>
+		<div class="logotipo left">Geradorzone</div><!--LOGOTIPO-->
+		<div class="menu-header right">
+
+			<ul class="lista-principal right"><!--LISTA PRINCIPAL-->
+				<li><a href="#">Geradores</a>
+					<ul class="sub-lista"><!--SUB LISTA-->
+						<li><a href="#">Steam Gift Card</a></li>
+						<li><a href="#">PSN Gift Card</a></li>
+						<li><a href="#">Xbox Live Gift Card</a></li>
+						<li><a href="#">Google Play Gift Card</a></li>
+						<li><a href="#">App Store Gift Card</a></li>
+					</ul><!--SUB LISTA-->
+				</li><!--GERADORES-->
+				<!--MAIS ITENS DA LISTA AQUI!-->
+			</ul><!--LISTA PRINCIPAL-->
+		</div><!--MENU-HEADER-->
+		<div class="clear"></div><!--CLEAR-->	
+	</header>
+
+	<div class="container">	
+	<div class="gerador">
+		<h1>Steam Gift Card</h1>
+		<p>Qual valor você deseja?</p>
+		<select id="select-value">
+			<option value='10'>R$10</option>
+			<option value=20>R$20</option>
+			<option value=30>R$30</option>
+			<option value=50>R$50</option>
+			<option value=100>R$100</option>
+		</select>
+		<button id="btn-gerador" onclick="click_generator();">Gerar Gift Card</button>
+
+		
+		<div id="progress" class="progress">
+    		<div id="progress-bar" class="progress-bar animacao"></div>
+		</div>
+
+		<div class="codigo-gerado container" id="codigo-gerado">
+			
+			<p>Seu codigo aparece aqui!</p>
+
+		</div><!--CODIGO GERADO-->
+		
+	</div><!--GERADOR-->
+	
+
+	<!--ADSENSE-->	
+		
+	</div><!--CONTAINER-->
+
+
+	<script src="script.js"></script>
+</body>
+</html>

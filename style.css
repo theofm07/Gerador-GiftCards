@@ -1,0 +1,146 @@
+/*BOOT CSS*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica;
+}
+.container{
+	max-width: 1280px;
+	margin: auto;
+	padding: 0 2%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+
+/*ESTILIZAÇÃO*/
+
+/*HEADER*/
+header{
+	background: black;
+	color: white;
+
+}
+header .logotipo{
+	font-size: 	24px;
+	font-weight: 900px;
+	
+}
+.menu-header{
+	margin-right: 30px;
+	margin-top: 3px;
+
+}
+.menu-header ul{
+	list-style-type: none;
+
+}
+.menu-header a{
+	color: white;
+	text-decoration: none;
+}
+.lista-principal{
+	font-size: 16px;
+}
+.sub-lista{
+	display: none;
+
+	position: absolute;
+	top: 25px;
+	right: 10px;
+	background: #fafafa;
+
+	margin: 2px;
+	border: 2px solid #c0c0c0;
+	width: 150px;
+}
+.sublista li{
+
+}  
+
+.sub-lista a{
+	color: black;
+}
+.menu-header li:hover ul, .menu-header li.over ul{
+	display: block;
+}
+.sublista:hover{
+	display:block;
+}
+/*FIM HEADER*/
+
+/*GERADOR*/
+.gerador{
+	margin-left: 50%;
+	margin-top: 150px;
+	transform: translate(-50%, -40%);
+	text-align: center;
+}
+
+.gerador h1{
+
+	padding-bottom: 10px;
+}
+.gerador p{
+	padding-bottom: 10px;
+}
+select{
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+}
+.gerador button{
+	width: 100%;
+	margin-top: 3px;
+}
+
+/*PROGRESS BAR*/
+
+.progress{
+	margin-top: 5px;
+    height: 15px;
+    background-color: #777;
+    position: relative;
+}
+
+.progress .progress-bar{
+   position: absolute;
+   height: 100%;
+   background-color: #add555;
+   /*animation: progress-animation 6s;*/
+}
+.progress .animacao{
+	/*animation: progress-animation 2s;*/
+}
+
+@keyframes progress-animation{
+    0% { width: 0%; }
+    
+    100% { width: 100%}
+    
+}
+
+
+/*CODIGO GERADO*/
+
+.codigo-gerado{
+	margin-top: 15px;
+	background: black;
+	color: white;
+}
+.codigo-gerado p{
+	font-size: 24px;
+	padding: 5px;
+}
+
+@media screen and (max-width: 450px){
+	.gerador{
+		margin: 20px;
+	}
+}
